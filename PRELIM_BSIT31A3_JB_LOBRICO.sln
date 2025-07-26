@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36301.6 d17.14
+VisualStudioVersion = 17.14.36301.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PRELIM_A1_BSIT31A3_JB_LOBRICO", "PRELIM_A1_BSIT31A3_JB_LOBRICO\PRELIM_A1_BSIT31A3_JB_LOBRICO.csproj", "{1C8A95DC-50F0-4D9C-909C-3DECA91A2C16}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PRELIM_BSIT31A3_JB_LOBRICO", "PRELIM_A1_BSIT31A3_JB_LOBRICO\PRELIM_BSIT31A3_JB_LOBRICO.csproj", "{1C8A95DC-50F0-4D9C-909C-3DECA91A2C16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
