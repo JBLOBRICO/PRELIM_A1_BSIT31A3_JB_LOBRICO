@@ -1,4 +1,4 @@
-﻿namespace PRELIM_A1_BSIT31A3_JB_LOBRICO.Models
+﻿namespace PRELIM_BSIT31A3_JB_LOBRICO.Models
 {
     public enum Gender
     {
