@@ -1,0 +1,63 @@
+﻿@using PRELIM_A1_BSIT31A3_JB_LOBRICO.Models
+@{
+    ViewData["Title"] = "Student List";
+
+    var students = new List<Student>();
+
+    var s1 = new Student("Juan", "Dela Cruz");
+    s1.Title = "Mr.";
+    s1.Course = "BSIT";
+    s1.Section = "31A3";
+    s1.Birthday = new DateTime(2003, 5, 10);
+    s1.SetGender(Gender.Male);
+
+    var s2 = new Student("Maria", "Santos");
+    s2.Title = "Ms.";
+    s2.Course = "BSIT";
+    s2.Section = "31A3";
+    s2.Birthday = new DateTime(2004, 3, 22);
+    s2.SetGender(Gender.Female);
+
+    students.AddRange(new[]
+    {
+        s1, s2,
+        new Student("Daniel", "Padilla") { Title = "Mr.", Course = "BSIT", Section = "31A3", Birthday = new DateTime(2003, 7, 20), Gender = Gender.Male },
+        new Student("Liza", "Soberano") { Title = "Ms.", Course = "BSIT", Section = "31A3", Birthday = new DateTime(2004, 2, 14), Gender = Gender.Female },
+        new Student("Enrique", "Gil") { Title = "Mr.", Course = "BSIT", Section = "31A3", Birthday = new DateTime(2003, 11, 1), Gender = Gender.Male },
+        new Student("Nadine", "Lustre") { Title = "Ms.", Course = "BSIT", Section = "31A3", Birthday = new DateTime(2004, 9, 8), Gender = Gender.Female },
+        new Student("James", "Reid") { Title = "Mr.", Course = "BSIT", Section = "31A3", Birthday = new DateTime(2003, 1, 30), Gender = Gender.Male },
+        new Student("Kathryn", "Bernardo") { Title = "Ms.", Course = "BSIT", Section = "31A3", Birthday = new DateTime(2004, 6, 2), Gender = Gender.Female },
+        new Student("Pia", "Wurtzbach") { Title = "Ms.", Course = "BSIT", Section = "31A3", Birthday = new DateTime(2002, 10, 15), Gender = Gender.Female },
+        new Student("JB", "Lobrico") { Title = "Mr.", Course = "BSIT", Section = "31A3", Birthday = new DateTime(2003, 12, 5), Gender = Gender.Male }
+    });
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-center text-primary">📚 Student List - BSIT 31A3</h2>
+
+    <table class="table table-hover table-bordered table-striped shadow">
+        <thead class="table-dark">
+            <tr>
+                <th>Full Name</th>
+                <th>Gender</th>
+                <th>Course</th>
+                <th>Section</th>
+                <th>Birthday</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in students)
+            {
+                <tr>
+                    <td>@student.FullName</td>
+                    <td>@student.Gender</td>
+                    <td>@student.Course</td>
+                    <td>@student.Section</td>
+                    <td>@student.Birthday.ToString("MMMM dd, yyyy")</td>
+                    <td>@student.Age</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
